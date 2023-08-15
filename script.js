@@ -125,29 +125,11 @@ function initGame() {
     window.addEventListener("keydown", handleInput);
 }
 
-const speedBtn = document.createElement("button");
-const speeddeBtn = document.createElement("button");
 const refreshBtn = document.createElement("button");
 const startOverBtn = document.createElement("button");
 
-speedBtn.innerText = "Speed Up";
-speeddeBtn.innerText = "Speed Down";
 refreshBtn.innerText = "Refresh";
 startOverBtn.innerText = "Start Over";
-
-speedBtn.addEventListener("click", () => {
-  speed -= 10;
-  clearInterval(gameLoop);
-  gameLoop = setInterval(function() {
-  }, speed);
-});
-
-speeddeBtn.addEventListener("click", () => {
-  speed += 25;
-  clearInterval(gameLoop);
-  gameLoop = setInterval(function() {
-  }, speed);
-});
 
 refreshBtn.addEventListener("click", () => {
   location.reload();
@@ -158,8 +140,6 @@ startOverBtn.addEventListener("click", () => {
   initGame();
 });
 
-document.body.appendChild(speedBtn);
-document.body.appendChild(speeddeBtn);
 document.body.appendChild(refreshBtn);
 document.body.appendChild(startOverBtn);
 
