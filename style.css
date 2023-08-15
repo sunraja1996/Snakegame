@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("./_90d84df4-51d1-4651-9b58-ddc3e3ae0037.jpeg"); 
+    background-image: url("./BG_Snake.jpeg"); 
     background-repeat: no-repeat;
     background-size: cover;
 }
